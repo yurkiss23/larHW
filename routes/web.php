@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::view('/','welcome');
+
+Route::get('user/{id}/{user2_id}','TestController@user');
